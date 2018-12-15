@@ -29,19 +29,12 @@ print("Podaj słowo: ")
 do_wyszukania = input()
 
 print("Podaj nazwe pliku")
-
 nazwa_pliku = input()
-plik = open(nazwa_pliku, "r")
 
-word_search(do_wyszukania, plik.readlines())
 
-if not plik.closed:
-    plik.close
+with open(nazwa_pliku, "r") as plik:
+    word_search(do_wyszukania, plik.readlines())
 
 
 
-            
-
-
-
-    
+               
