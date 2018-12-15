@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+
+list1 = [x**2 for x in range(1,100)]
+lista2 = [x**3 for x in range 1,50)] 
+
+print(lista1, lista2)
+
+print("dlugosc listy pierwszej to {}, a drugiej to {}".format str((len(lista1) str(len(lista2)))
